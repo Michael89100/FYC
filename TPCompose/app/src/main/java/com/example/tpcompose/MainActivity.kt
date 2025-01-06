@@ -1,6 +1,5 @@
 package com.example.tpcompose
 
-import ProfileScreen
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -17,7 +16,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             TPComposeTheme {
                 Scaffold {
-                    ProfileScreen()
+                    //AuthApp()
+                    //ProfileScreen()
                 }
             }
         }
