@@ -6,6 +6,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.Scaffold
+import androidx.navigation.compose.rememberNavController
 import com.example.tpcompose.ui.theme.TPComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -15,9 +16,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TPComposeTheme {
+                val navController = rememberNavController()
                 Scaffold {
                     //AuthApp()
                     //ProfileScreen()
+                    AppNavHost(navController = navController)
                 }
             }
         }

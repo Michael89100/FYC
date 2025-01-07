@@ -18,8 +18,4 @@ fun AuthApp() {
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-fun PreviewAuthApp() {
-    AuthApp()
-}
+
